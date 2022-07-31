@@ -1,0 +1,9 @@
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: darkslategray;
+    height: 150px;
+}
