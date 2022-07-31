@@ -1,0 +1,19 @@
+.cart{
+    background-color: red;
+}
+
+.cartItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceField{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

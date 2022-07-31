@@ -37,6 +37,9 @@ const cartReducer = (state, action) => {
             totalAmountOriginal: updatedTotalAmountOriginal
         }
     }
+    if(action.type === "REMOVE"){
+        console.log("Removing item")
+    }
     return defaultCartState;
 }
 

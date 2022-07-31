@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import classes from './Modal.module.css'
-import Button from './Button'
 
 const Backdrop = (props) => {
     return <div className={classes.backdrop} onClick={props.toggleCart}></div>
@@ -13,7 +12,6 @@ const ModalOverlay = (props) => {
         <div className={classes.content}>
             {props.children}
         </div>
-        <Button onClick={props.toggleCart}>Checkout</Button>
     </div>
     )
 }
