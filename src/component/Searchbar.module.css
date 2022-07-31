@@ -1,14 +1,29 @@
 .searchbar{
     display: flex;
-    height: 60px; 
-    max-width: 90%;
+    height: 50px; 
+    max-width: 95%;
     margin: 0px auto;
     border: 2px solid #f0f2f2;
     border-radius: 1rem;
 }
 
 .searchbarText{
+    background-color: transparent;
+    border: none;
+    outline:none;
     margin: auto 1rem;
     font-size: 1.5rem;
-    color: #2d3340;
+    color: #f0f2f2;
+}
+
+::placeholder {
+    color: #f0f2f2;
+    opacity: 0.7;
+  }
+
+.searchbarText:active{
+    background-color: transparent;
+    border: none;
+    outline:none;
+
 }

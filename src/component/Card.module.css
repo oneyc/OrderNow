@@ -1,13 +1,13 @@
 .card{
     min-height: 350px;
     width: 290px;
-    margin: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: column;
     background-color: #f0f2f2;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s;
     overflow: hidden;
@@ -36,7 +36,7 @@ img{
 
 
 .title{
-    color:#f0f2f2;
+    color:#f25c78;
     font-weight:500;
     text-align: center;
 }

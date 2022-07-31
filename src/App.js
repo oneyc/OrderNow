@@ -35,7 +35,7 @@ function App() {
        null}
       <Header showCart = {toggleCartModal}/>
       <div 
-        style={{maxWidth: '1500px', margin: '0 auto', backgroundColor: 'rgba(0,0,0,0.5)', paddingTop: '50px', paddingBottom: '50px'}}>
+        style={{maxWidth: '1500px', margin: '0 auto', backgroundColor: 'rgba(255,255,255,0.2)', paddingTop: '50px', paddingBottom: '50px'}}>
         <Searchbar 
           handleQueryChange={handleQueryChange}/>
         <div 
