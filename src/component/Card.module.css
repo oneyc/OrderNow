@@ -70,22 +70,21 @@ img{
 }
 
 .button{
-    border-style: none;
     cursor: pointer;
-    background-color: #bf0336;
     color: #f0f2f2;
+    background-color: #bf0336;
+    width: 120px;
     font-size:1.5rem;
     padding: 15px;
-    border-radius: 5px;
     margin-top: 10px;
-    cursor: pointer;
+    border-radius: 5px;
     border: 1px solid transparent;
     transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .button:hover{
     border: 1px solid #bf0336;
-    background-color: #f0f2f2;
+    background-color: #2d3340;
     color: #bf0336;
 }
 

@@ -15,7 +15,7 @@ const Card = (props) => {
                 "price":props.data.price,
                 "final_price":props.data.final_price
             }
-            )
+        )
     }
 
     return(
@@ -29,7 +29,7 @@ const Card = (props) => {
                     <p className={classes.priceDiscounted}>{props.data.currency} {props.data.final_price.toFixed(2)}</p>
                     <p className={classes.priceOriginal}>{props.data.currency} {props.data.price.toFixed(2)}</p>
                 </div>
-                <button className={classes.button} onClick={submitHandler}>Add to Cart</button>
+                <button className={classes.button} onClick={submitHandler}>Buy</button>
             </div>
         </div>
     )
