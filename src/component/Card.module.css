@@ -51,8 +51,8 @@ img{
 .price{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-self: flex-start;
+    justify-content: center;
+    align-self: center;
     color: #2d3340;
 }
 
