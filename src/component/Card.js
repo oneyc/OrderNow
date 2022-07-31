@@ -9,6 +9,7 @@ const Card = (props) => {
         event.preventDefault();
         cartCtx.addItem(
             {
+                "image":props.data.image,
                 "name":props.data.name,
                 "itemAmount": 1,
                 "price":props.data.price,
@@ -20,12 +21,14 @@ const Card = (props) => {
     return(
         <div className={classes.card}>
             <img src={props.data.image}></img>
+            <div className={classes.cardText}>
             <h3 className={classes.title}>{props.data.name}</h3>
                 <div className={classes.price}>
-                <p className={classes.priceDiscounted}>{props.data.currency} {props.data.final_price}</p>
-                <p className={classes.priceOriginal}>{props.data.currency} {props.data.price}</p>
+                    <p className={classes.priceDiscounted}>{props.data.currency} {props.data.final_price.toFixed(2)}</p>
+                    <p className={classes.priceOriginal}>{props.data.currency} {props.data.price.toFixed(2)}</p>
+                </div>
+                <button className={classes.button} onClick={submitHandler}>Add to Cart</button>
             </div>
-            <button className={classes.button} onClick={submitHandler}>Add to Cart</button>
         </div>
     )
 }

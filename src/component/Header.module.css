@@ -4,8 +4,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: darkslategray;
+    background-color: #282828;
     height: 150px;
+}
+
+.logo{
+    color: #f21b56;
 }
 
 .cartButton{

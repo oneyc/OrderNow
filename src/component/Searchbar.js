@@ -1,9 +1,10 @@
 import classes from './Searchbar.module.css'
 
-const Searchbar = () => {
+const Searchbar = (props) => {
+
     return(
         <div className={classes.searchbar}>
-            <p className={classes.searchbarText}>Search</p>
+            <input placeholder="Search" onChange={props.handleQueryChange} className={classes.searchbarText}></input>
         </div>
     )
 }

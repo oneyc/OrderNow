@@ -1,7 +1,14 @@
 .searchbar{
+    display: flex;
     height: 60px; 
-    max-width: 100%;
-    margin: 20px 50px;
-    background-color: antiquewhite;
+    max-width: 90%;
+    margin: 0px auto;
+    border: 2px solid #f0f2f2;
     border-radius: 1rem;
+}
+
+.searchbarText{
+    margin: auto 1rem;
+    font-size: 1.5rem;
+    color: #2d3340;
 }

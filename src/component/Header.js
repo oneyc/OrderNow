@@ -10,7 +10,7 @@ const Header = (props) => {
     
     return(
         <div className={classes.headerContainer}>
-            <h1>OrderNow</h1>
+            <h1 className={classes.logo}>Gamers4Gamers</h1>
             <div className={classes.cartButton} onClick={props.showCart}>
                 <h1>Cart</h1>
                 <h1 className={classes.cartBadge}>{numberOfItems}</h1>
