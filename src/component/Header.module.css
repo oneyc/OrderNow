@@ -7,3 +7,9 @@
     background-color: darkslategray;
     height: 150px;
 }
+
+.cartButton{
+    color: antiquewhite;
+    padding: 10px;
+    cursor: pointer;
+}

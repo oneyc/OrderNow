@@ -3,7 +3,6 @@ import apiData from '../data/apiData'
 import Button from './Button'
 
 const Card = (props) => {
-    console.log(props)
     return(
         <div className={classes.card}>
             <img src={props.data.image}></img>
@@ -12,7 +11,7 @@ const Card = (props) => {
                 <p className={classes.priceDiscounted}>{props.data.currency} {props.data.final_price}</p>
                 <p className={classes.priceOriginal}>{props.data.currency} {props.data.price}</p>
             </div>
-            <Button/>
+            <Button>Buy Now</Button>
         </div>
     )
 }

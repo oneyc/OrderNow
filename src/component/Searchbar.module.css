@@ -1,7 +1,7 @@
 .searchbar{
-    height: 80px; 
-    width: 100%;
-    margin: 20px auto;
+    height: 60px; 
+    max-width: 100%;
+    margin: 20px 50px;
     background-color: antiquewhite;
     border-radius: 1rem;
 }
