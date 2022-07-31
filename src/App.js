@@ -12,7 +12,6 @@ function App() {
   const[query, setQuery] = useState("")
 
   const toggleCartModal = () => {
-    console.log("Pressed")
     setShowCart(!showCart)
   }
 

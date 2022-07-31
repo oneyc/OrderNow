@@ -3,8 +3,29 @@
     flex-direction: column;
 }
 
+.closeModal{
+    position: absolute;
+    right: 15px;
+    top: -1rem;
+    width: 2rem;
+    height:2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#bf0336;
+    color:#f0f2f2;
+    cursor: pointer;
+
+}
+
 .title{
     color: #bf0336;
+}
+
+.titleEmpty{
+    color: #bf0336;
+    text-align: center;
+
 }
 
 .cart{
@@ -29,11 +50,12 @@
 }
 
 .plusMinus{
-    padding:10px;
     color: #f0f2f2;
     background-color: rgba(191,3,54,0.5);
-    width: fit-content;
-    height: fit-content;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
     border-radius: 1rem;
 
 }
@@ -43,7 +65,7 @@
 }
 .itemTitle{
     color: #282828;
-    margin-left: 1rem;
+    margin: 0rem 0rem 0rem 1rem;
     font-size: 1rem;
 }
 .itemAmount{
@@ -54,6 +76,8 @@
 }
 .itemPrice{
     color: #bf0336;
+    height: fit-content;
+    margin: 0.5rem 0rem;
     font-size: 1rem;
     font-weight: 500;
     text-align: end;
@@ -92,7 +116,10 @@ hr{
     color: grey;
     font-size: 1rem;
     font-weight: 500;
+}
 
+.priceField .label{
+    color:grey;
 }
 
 .buttonArea{
@@ -111,4 +138,24 @@ hr{
     font-weight: 700;
     background-color: #f21b56;
     color: #f0f2f2;
+}
+
+@media (max-width: 600px) {
+    .itemTitle{
+        font-size: 1rem;
+    }
+
+    .cartItems{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cartAmount{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .itemAmount{
+        margin: 3px 0rem;
+    }
 }

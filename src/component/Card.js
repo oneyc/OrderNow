@@ -20,7 +20,9 @@ const Card = (props) => {
 
     return(
         <div className={classes.card}>
-            <img src={props.data.image}></img>
+            <div className={classes.imageContainer}>
+                <img src={props.data.image}></img>
+            </div>
             <div className={classes.cardText}>
             <h3 className={classes.title}>{props.data.name}</h3>
                 <div className={classes.price}>

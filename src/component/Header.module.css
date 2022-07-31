@@ -10,6 +10,7 @@
 
 .logo{
     color: #f21b56;
+    font-size: 2.5rem;
 }
 
 .cartButton{
@@ -23,11 +24,15 @@
 
 
 .cartButton h1{
-    margin-right: 10px;
+    margin-right: 5x;
 }
 
 .cartBadge{
     background-color: rgba(0,0,0,0.5);
     padding: 10px;
     border-radius: 50%;
+}
+
+.logo{
+    margin-left: 5px;
 }

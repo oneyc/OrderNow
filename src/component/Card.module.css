@@ -17,10 +17,17 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
+.imageContainer{
+    width: 100%;
+    min-height: 370px;
+    background-color: #2d3340;
+}
+
+
 img{
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit:contain;
 }
 
 .cardText{
@@ -73,11 +80,15 @@ img{
     margin-top: 10px;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: all 0.3s ease-in-out;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .button:hover{
     border: 1px solid #bf0336;
     background-color: #f0f2f2;
     color: #bf0336;
+}
+
+.button:active{
+    transform: scale(0.95);
 }

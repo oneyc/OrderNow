@@ -30,6 +30,8 @@ const Cart = (props) => {
     return (
     <Modal toggleCart={props.toggleCart}>
         <div className={classes.container}>
+            <div className={classes.closeModal} onClick={props.toggleCart}>X</div>
+        {cartCtx.items.length > 0 ? <React.Fragment>
             <h1 className={classes.title}>Cart</h1>
             <hr/>
             <div className={classes.cart}>
@@ -38,22 +40,22 @@ const Cart = (props) => {
             <hr/>
             <div className={classes.price}>
                 <div className={classes.priceField}>
-                    <h3>Original Price</h3>
-                    <h3 className={classes.priceNum}>USD {cartCtx.totalAmountOriginal.toFixed(2)}</h3>
+                    <h3 className={classes.label}>Original Price</h3>
+                    <h3 className={classes.priceNumDiscount}>USD {cartCtx.totalAmountOriginal.toFixed(2)}</h3>
                 </div>
                 <div className={classes.priceField}>
-                    <h3>Discounts</h3>
+                    <h3 className={classes.label}>Discounts</h3>
                     <h3 className={classes.priceNumDiscount}>USD {(cartCtx.totalAmountOriginal - cartCtx.totalAmount).toFixed(2)}</h3>
                 </div>
                 <div className={classes.priceField}>
-                    <h3>Grand Total</h3>
+                    <h3 className={classes.label}>Grand Total</h3>
                     <h3 className={classes.priceNum}>USD {cartCtx.totalAmount.toFixed(2)}</h3>
                 </div>
             </div>
             <div className={classes.buttonArea}>
-                <button>Exit</button>
                 <button onClick={checkOutHandler}>Checkout</button>
-            </div>
+            </div></React.Fragment>:
+             <h1 className={classes.titleEmpty}>Cart is Empty...</h1>}
         </div>
     </Modal>
     )
