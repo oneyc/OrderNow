@@ -35,5 +35,17 @@
     color:lightgray;
     text-decoration: line-through;
     margin: 0rem;
+}
 
+.button{
+    border-style: none;
+    cursor: pointer;
+    background-color: orange;
+    color: antiquewhite;
+    font-size:1.5rem;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
 }

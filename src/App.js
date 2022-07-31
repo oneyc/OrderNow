@@ -4,6 +4,7 @@ import Cart from "./component/Cart.js";
 import Header from "./component/Header.js";
 import Searchbar from "./component/Searchbar.js";
 import apiData from './data/apiData'
+import CartProvider from "./store/CartProvider";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
   })
 
   return (
-    <React.Fragment>
+    <CartProvider>
       {showCart ? <Cart toggleCart = {toggleCartModal}/> : null}
       <Header showCart = {toggleCartModal}/>
       <div style={{maxWidth: '1500px', margin: '0 auto'}}>
@@ -30,7 +31,7 @@ function App() {
           {CardMapping}
        </div>
       </div>
-    </React.Fragment>
+    </CartProvider>
   );
 }
 

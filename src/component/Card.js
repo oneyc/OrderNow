@@ -1,8 +1,22 @@
 import classes from './Card.module.css'
-import apiData from '../data/apiData'
-import Button from './Button'
+import CartContext from '../store/cart-context'
+import { useContext } from 'react'
 
 const Card = (props) => {
+    const cartCtx = useContext(CartContext)
+
+    const submitHandler = (event) =>{
+        event.preventDefault();
+        cartCtx.addItem(
+            {
+                "name":props.data.name,
+                "itemAmount": 1,
+                "price":props.data.final_price,
+                "final_price":props.data.price
+            }
+            )
+    }
+
     return(
         <div className={classes.card}>
             <img src={props.data.image}></img>
@@ -11,7 +25,7 @@ const Card = (props) => {
                 <p className={classes.priceDiscounted}>{props.data.currency} {props.data.final_price}</p>
                 <p className={classes.priceOriginal}>{props.data.currency} {props.data.price}</p>
             </div>
-            <Button>Buy Now</Button>
+            <button className={classes.button} onClick={submitHandler}>Buy Now</button>
         </div>
     )
 }
