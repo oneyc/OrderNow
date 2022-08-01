@@ -1,3 +1,3 @@
-# OffGamers Technical Interview
+# Technical Interview
 
-Solution to Offgamer's technical interview question.
+Solution to an assignment by Wan.
